@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Summery Component</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #e0e8ff;
+      }
+      #bigbox {
+        width: 450px;
+        height: 667px;
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 7%;
+      }
+      #avatar {
+        max-width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
+      }
+      #name {
+        text-align: center;
+        padding: 20px 0px 0px 0px;
+        line-height: 37px;
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+      }
+      #meaning {
+        text-align: center;
+        padding: 0px 48px 0px 48px;
+        color: #717fa6;
+        font-size: 16px;
+        font-family: Red Hat Display;
+        line-height: 26px;
+        font-weight: 500;
+      }
+      #box {
+        background-color: #f7f9ff;
+        border-radius: 11px;
+        width: 354px;
+        height: 98px;
+        position: relative;
+        left: 48px;
+        top: 10px;
+      }
+      #icon {
+        position: relative;
+        top: 17px;
+        left: 16px;
+      }
+      #plan {
+        font-size: 15px;
+        font-family: Red Hat Display;
+        font-weight: 900;
+        position: relative;
+        bottom: 47px;
+        left: 84px;
+      }
+      #money {
+        color: #717fa6;
+        position: relative;
+        left: 84px;
+        bottom: 55px;
+        font-family: Red Hat Display;
+      }
+      #link {
+        color: #382ae1;
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        position: relative;
+        left: 280px;
+        bottom: 100px;
+        text-decoration-line: underline;
+      }
+      #click {
+        position: relative;
+        top: 25px;
+        left: 48px;
+        background-color: #382ae1;
+        width: 354px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      #click1 {
+        color: white;
+        position: relative;
+        left: 102px;
+        top: 35%;
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+      }
+      #cancel {
+        position: relative;
+        top: 32px;
+        left: 176px;
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        color: #717fa6;
+      }
+      #cancel:link {
+        color: #717fa6;
+        text-decoration: none;
+      }
+      #cancel:hover {
+        color: #1f2e55;
+      }
+      #link:hover {
+        color: #766cf1;
+      }
+      #click:hover {
+        background-color: #766cf1;
+      }
+      @media (max-width: 500px) {
+        #bigbox {
+          width: 327px;
+          height: 567px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bigbox">
+      <img id="avatar" src="illustration-hero.svg" />
+      <h1 id="name">Order Summary</h1>
+      <p id="meaning">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div id="box">
+        <img id="icon" src="icon-music.svg" />
+        <h3 id="plan">Annual Plan</h3>
+        <p id="money">$59.99/year</p>
+        <p id="link">Change</p>
+      </div>
+      <div id="click">
+        <p id="click1">Proceed to Payment</p>
+      </div>
+      <p id="cancel">Cancel Order</p>
+    </div>
+  </body>
+</html>
